@@ -1,0 +1,113 @@
+@import "global";
+
+.header {
+    min-height: 782px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+
+    &__inner {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 59px;
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__btn {
+        padding: 11px 25px;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+
+    &__localization {
+        margin-right: 51px;
+        padding-right: 25px;
+        padding-left: 42px;
+    }
+
+    &__menu {
+
+
+        &-item {
+            text-transform: uppercase;
+            line-height: 17px;
+            font-size: 15px;
+            vertical-align: center;
+
+            &+.header__menu-item {
+                margin-left: 18px;
+            }
+
+        }
+    }
+
+    &__localization {
+        position: relative;
+
+        .localization-lang::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: 0;
+            background-image: url('../img/us-flag.svg');
+            width: 32px;
+            height: 32px;
+        }
+
+        .localization-lang::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url('../img/arrow-down.png');
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__info {
+        display: block;
+        margin: 0 auto;
+        margin-top: 177px;
+        max-width: 580px;
+        text-align: center;
+
+        &-title {
+            font-size: 72px;
+            letter-spacing: 0.05em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            margin-top: 39px;
+            padding: 0 15px;
+            font-size: 24px;
+            line-height: 150%;
+
+        }
+
+        &-btn {
+            background-color: #fff;
+            border: none;
+            padding: 15px 50px;
+            text-transform: uppercase;
+            margin-top: 55px;
+            color: #ED4C5C;
+        }
+    }
+}
+
+
+
+@import "media";
