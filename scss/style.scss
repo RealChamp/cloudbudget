@@ -36,6 +36,7 @@
     }
 
     &__menu {
+        margin-top: 5px;
 
 
         &-item {
@@ -178,13 +179,6 @@
     min-height: 660px;
     background-color: #fafafa;
 
-    &__title {
-        font-size: 36px;
-        line-height: 43px;
-        font-weight: 700;
-        text-align: center;
-        padding: 63px 0;
-    }
 
     &__items {
         display: flex;
@@ -196,13 +190,6 @@
         &__item {
             position: relative;
             display: inline-block;
-        }
-
-        &__item-img {
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-
         }
 
         &__info {
@@ -235,7 +222,59 @@
             margin-bottom: 20px;
         }
 
-        &__info-link {}
+    }
+}
+
+.technology {
+    min-height: 500px;
+
+    &-title {
+        margin-bottom: 100px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        max-width: 210px;
+        padding: 0 10px;
+        text-align: center;
+        position: relative;
+
+        &-img {
+            width: 70px;
+            height: 70px;
+        }
+
+
+
+        &-title {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: #101010;
+
+        }
+
+        &-text {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        &-number {
+            color: rgba(16, 16, 16, 0.08);
+            font-size: 100px;
+            line-height: 120px;
+            font-weight: 700;
+            position: absolute;
+            bottom: 59%;
+            right: 22%;
+
+        }
     }
 }
 
