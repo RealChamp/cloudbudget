@@ -1,5 +1,7 @@
 @import "global";
 
+
+//  Header
 .header {
     min-height: 782px;
     background-position: center center;
@@ -31,9 +33,57 @@
     }
 
     &__localization {
-        margin-right: 51px;
+        position: relative;
+        margin-right: 55px;
         padding-right: 25px;
         padding-left: 42px;
+
+        .dropdown-content {
+            padding-left: 42px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            margin-top: 12px;
+            max-width: 120px;
+            width: 100%;
+            height: 50px;
+            display: none;
+
+
+
+            .dropdown-flag {
+                position: absolute;
+                left: 0;
+                width: 32px;
+                height: 32px;
+            }
+
+            .dropdown-lang {
+                color: #fff;
+            }
+
+        }
+
+        &-flag {
+            position: absolute;
+            top: -8px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+
+        }
+
+        &-arrow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease-in;
+        }
+
     }
 
     &__menu {
@@ -57,29 +107,6 @@
         }
     }
 
-    &__localization {
-        position: relative;
-
-        .localization-lang::before {
-            content: "";
-            position: absolute;
-            top: -8px;
-            left: 0;
-            background-image: url('../img/us-flag.svg');
-            width: 32px;
-            height: 32px;
-        }
-
-        .localization-lang::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-image: url('../img/arrow-down.png');
-            width: 18px;
-            height: 18px;
-        }
-    }
 
     &__info {
         display: block;
@@ -115,6 +142,10 @@
         }
     }
 }
+
+// end of header
+
+// Overview
 
 .overview {
     &__inner {
@@ -176,6 +207,10 @@
     }
 }
 
+//  end of overview
+
+
+// features
 .features {
     min-height: 660px;
     background-color: #fafafa;
@@ -226,6 +261,9 @@
     }
 }
 
+// end of features
+
+// technology
 .technology {
     min-height: 500px;
 
@@ -281,9 +319,14 @@
     }
 }
 
+// end of technology
+
+//  join
 .join {
     min-height: 500px;
     background-color: rgba(#865656, .75);
+    padding-right: 50px;
+    padding-left: 50px;
 
     &__inner {
         display: flex;
@@ -362,6 +405,9 @@
     }
 }
 
+// end of join
+
+// contact
 .contact {
     min-height: 500px;
 
@@ -427,8 +473,9 @@
     }
 }
 
-//  Footer
+// end of contact
 
+//  Footer
 .footer {
     min-height: 435px;
     background-color: #fafafa;
