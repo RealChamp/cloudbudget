@@ -27,6 +27,7 @@
         border: 1px solid #fff;
         background-color: transparent;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     &__localization {
@@ -359,13 +360,110 @@
             }
         }
     }
+}
+
+.contact {
+    min-height: 500px;
 
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 117px;
+    }
+
+    &__info {
+        max-width: 435px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 140%;
+            margin-top: 60px;
+        }
+    }
+
+    &__form {
 
 
+        &-btn {
+            background-color: #ED4C5C;
+            border: 1.5px solid #ED4C5C;
+            border-radius: 6px;
+            padding: 15px 25px;
+            margin-top: 25px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .medium-field {
+            width: 255px;
+            padding-left: 30px;
+
+
+        }
+
+        .lg-field {
+            width: 540px;
+            margin-top: 24px;
+            padding-left: 30px;
+        }
+
+        input,
+        select {
+            border: 1px solid #333333;
+            border-radius: 6px;
+            height: 60px;
+        }
+
+        input::placeholder {
+            color: rgba(19, 39, 67, 0.5);
+        }
+    }
+}
+
+
+//  Select2 settings
+
+.select2-container--default .select2-selection--single {
+    width: 540px;
+    height: 60px;
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 30px;
+    line-height: 24px;
+    padding-top: 16px;
 
 
 }
+
+.select2-search--dropdown {
+    display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: rgba(19, 39, 67, 0.5);
+}
+
+//  end of select2 settings
+
+
 
 
 
