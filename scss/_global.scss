@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -12,7 +13,9 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    height: 100%;
 }
+
 
 li {
     display: inline-block;
@@ -30,6 +33,20 @@ a {
 
 img {
     display: inline-block;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
 
 .container-fluid {
@@ -56,4 +73,12 @@ img {
 
 .mr-1 {
     margin-right: 28px;
+}
+
+.footer-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 85px;
+    margin-bottom: 33px;
 }

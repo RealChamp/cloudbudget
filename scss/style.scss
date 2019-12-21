@@ -427,6 +427,82 @@
     }
 }
 
+//  Footer
+
+.footer {
+    min-height: 435px;
+    background-color: #fafafa;
+    color: #101010;
+    line-height: 150%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__address {
+        max-width: 235px;
+        padding: 0 10px;
+
+    }
+
+    &__services {
+        max-width: 225px;
+
+        .footer-title {
+            margin-bottom: 25px;
+        }
+
+        &-menu {
+
+
+            .services-menu__item {
+                display: block;
+
+                &+.services-menu__item {
+                    margin-top: 5px;
+                }
+
+                a {
+                    color: #101010;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        &-phone {
+            margin-top: 10px;
+
+
+        }
+
+        &-icons {
+            margin-top: 20px;
+
+            a:not(:last-of-type) {
+                margin-right: 12px;
+            }
+
+            a img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__contact {
+        max-width: 180px;
+    }
+
+    .copyright {
+        margin-top: 140px;
+    }
+}
+
+
+// end of footer
+
 
 //  Select2 settings
 
@@ -459,6 +535,10 @@
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: rgba(19, 39, 67, 0.5);
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    display: block;
 }
 
 //  end of select2 settings
