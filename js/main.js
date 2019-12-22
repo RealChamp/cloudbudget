@@ -3,6 +3,10 @@ $(function () {
         placeholder: "Select Services",
     });
 
+    $('#select.ru').select2({
+        placeholder: "Выберите Услуги",
+    });
+
     $('.header__localization').click(function () {
         $('div.dropdown-content').toggle();
         if (!$('.header__localization-arrow').hasClass('rotate')) {
