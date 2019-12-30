@@ -11,7 +11,6 @@
 
 
     &__inner {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,6 +20,12 @@
             display: flex;
             align-items: center;
         }
+
+
+    }
+
+    .mobile-logo {
+        display: none;
     }
 
     &__btn {
@@ -95,7 +100,7 @@
         &-item {
             text-transform: uppercase;
             line-height: 17px;
-            font-size: 15px;
+            font-size: 16px;
             vertical-align: center;
             font-weight: 600;
 
@@ -165,6 +170,8 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 95px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     &__info {
@@ -346,8 +353,8 @@
 .join {
     min-height: 500px;
     background-color: rgba(#865656, .75);
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 55px;
+    padding-left: 55px;
 
     &__inner {
         display: flex;
@@ -356,7 +363,12 @@
 
         .img-wrapper {
             position: relative;
+            background-repeat: no-repeat;
             margin-top: 75px;
+
+            img {
+                max-width: 100%;
+            }
 
             &::before,
             &::after {
@@ -431,6 +443,7 @@
 // contact
 .contact {
     min-height: 500px;
+    position: relative;
 
 
     &__inner {
@@ -462,8 +475,7 @@
 
     &__form {
 
-
-        &-btn {
+        .contact__form-btn {
             background-color: #ED4C5C;
             border: 1.5px solid #ED4C5C;
             border-radius: 6px;
@@ -471,7 +483,9 @@
             margin-top: 25px;
             color: #fff;
             cursor: pointer;
+            display: block;
         }
+
 
         .medium-field {
             width: 255px;
@@ -614,12 +628,16 @@
     display: block;
 }
 
+.select2-container--default .select2-results__option[aria-selected=true] {
+    width: 100%;
+}
+
+.select2-results__option[aria-selected] {
+    display: block;
+}
+
+
 //  end of select2 settings
-
-
-
-
-
 
 
 @import "media";

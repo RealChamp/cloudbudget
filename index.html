@@ -8,7 +8,7 @@
     <title>CloudBadget</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/select2.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,14 +18,27 @@
             <header class="header" style="background-image: url('img/content/header-bg.jpg');">
                 <div class="container-fluid">
                     <div class="header__inner">
-                        <a href="#"><img src="img/logo.png" alt="logotype" class="header__logo"></a>
-                        <ul class="header__menu">
-                            <li class="header__menu-item"><a href="#">Overview</a></li>
-                            <li class="header__menu-item"><a href="#">Features</a></li>
-                            <li class="header__menu-item"><a href="#">Technology</a></li>
-                            <li class="header__menu-item"><a href="#">Contact</a></li>
-                            <li class="header__menu-item"><a href="#">Sign up</a></li>
-                        </ul>
+                        <a href="#"><img src="img/logo.png" alt="logotype" class="header__logo main-logo"></a>
+                        <a href="#"><img src="img/simple-logo.png" alt="secondary-logotype"
+                                class="mobile-logo header__logo"></a>
+                        <nav class="navigation">
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                            <ul class="header__menu">
+
+                                <li class="header__menu-item hvr-underline-from-left"><a href="#overview">Overview</a>
+                                </li>
+                                <li class="header__menu-item hvr-underline-from-left"><a href="#features">Features</a>
+                                </li>
+                                <li class="header__menu-item hvr-underline-from-left"><a
+                                        href="#technology">Technology</a></li>
+                                <li class="header__menu-item hvr-underline-from-left"><a href="#contact">Contact</a>
+                                </li>
+                                <li class="header__menu-item hvr-underline-from-left" style="display: none;">Login
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="flex-container">
                             <div class="header__localization">
                                 <div class="header__localization-flag"><img src="img/us-flag.svg" alt="usa-flag"></div>
@@ -40,7 +53,7 @@
                                 </div>
 
                             </div>
-                            <button class="header__btn btn" type="button">Login</button>
+                            <button class="header__btn btn hvr-bounce-to-bottom" type="button">Login</button>
                         </div>
                     </div>
                     <div class="header__info">
@@ -49,11 +62,12 @@
                             Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of <br>
                             Up to €4.99
                         </div>
-                        <button type="button" class="header__info-btn btn">sign up</button>
+                        <button type="button" class="header__info-btn btn animated pulse infinite medium">sign
+                            up</button>
                     </div>
                 </div>
             </header>
-            <section class="overview">
+            <section class="overview" id="overview">
                 <div class="container-fluid">
                     <div class="overview__inner">
                         <div class="overview__info">
@@ -76,7 +90,8 @@
                     </div>
                 </div>
             </section>
-            <section class="features">
+
+            <section class="features" id="features">
                 <div class="container-fluid">
                     <div class="title">
                         Features
@@ -125,7 +140,8 @@
                     </div>
                 </div>
             </section>
-            <section class="technology">
+
+            <section class="technology" id="technology">
                 <div class="container-fluid">
                     <div class="title technology-title">
                         Technology
@@ -179,6 +195,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="join">
                 <div class="container-fluid">
                     <div class="join__inner">
@@ -212,7 +229,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container-fluid">
                     <div class="contact__inner">
                         <div class="contact__info">
@@ -246,14 +263,16 @@
                                     <option value="technology">Technology</option>
                                 </select>
                             </label>
+
                             <label>
-                                <button class="contact__form-btn" type="submit" style="display:block">Submit
+                                <button class="contact__form-btn" type="submit">Submit
                                     Now</button>
                             </label>
                         </form>
                     </div>
                 </div>
             </section>
+
         </div>
         <div class="footer">
             <footer class="footer">
@@ -320,7 +339,22 @@
         </div>
     </div>
 
+
+
+    <a href="#" class="back-to-top">
+        <svg class="svg animated infinite slow fadeInUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+
+        </svg>
+    </a>
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </script>
     <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>

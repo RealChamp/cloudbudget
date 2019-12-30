@@ -8,7 +8,7 @@
     <title>CloudBadget</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/select2.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,12 +19,20 @@
                 <div class="container-fluid">
                     <div class="header__inner">
                         <a href="#"><img src="img/logo.png" alt="logotype" class="header__logo"></a>
-                        <ul class="header__menu">
-                            <li class="header__menu-item"><a href="#">Обзор</a></li>
-                            <li class="header__menu-item"><a href="#">Особенности</a></li>
-                            <li class="header__menu-item"><a href="#">Технологии</a></li>
-                            <li class="header__menu-item"><a href="#">Контакты</a></li>
-                        </ul>
+                        <nav class="navigation">
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                            <ul class="header__menu">
+                                <li class="header__menu-item hvr-underline-from-left"><a href="#overview">Обзор</a></li>
+                                <li class="header__menu-item hvr-underline-from-left"><a
+                                        href="#features">Особенности</a></li>
+                                <li class="header__menu-item hvr-underline-from-left"><a
+                                        href="#technology">Технологии</a></li>
+                                <li class="header__menu-item hvr-underline-from-left"><a href="#contact">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="flex-container">
                             <div class="header__localization">
                                 <div class="header__localization-flag"><img src="img/content/russia.svg"
@@ -41,7 +49,7 @@
                                 </div>
 
                             </div>
-                            <button class="header__btn btn" type="button">Войти</button>
+                            <button class="header__btn btn hvr-bounce-to-bottom" type="button">Войти</button>
                         </div>
                     </div>
                     <div class="header__info ru">
@@ -51,11 +59,12 @@
                             версии до 350 рублей
 
                         </div>
-                        <button type="button" class="header__info-btn btn ru">Зарегистрироваться</button>
+                        <button type="button"
+                            class="header__info-btn btn ru animated pulse infinite medium">Зарегистрироваться</button>
                     </div>
                 </div>
             </header>
-            <section class="overview">
+            <section class="overview" id="overview">
                 <div class="container-fluid">
                     <div class="overview__inner">
                         <div class="overview__info ru">
@@ -78,7 +87,7 @@
                     </div>
                 </div>
             </section>
-            <section class="features">
+            <section class="features" id="features">
                 <div class="container-fluid">
                     <div class="title">
                         Особенности
@@ -129,7 +138,7 @@
                     </div>
                 </div>
             </section>
-            <section class="technology">
+            <section class="technology" id="technology">
                 <div class="container-fluid">
                     <div class="title technology-title">
                         Технологии
@@ -212,7 +221,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container-fluid">
                     <div class="contact__inner">
                         <div class="contact__info">
@@ -319,6 +328,15 @@
             </footer>
         </div>
     </div>
+
+    <a href="#" class="back-to-top">
+        <svg class="svg animated infinite slow fadeInUp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+
+        </svg>
+    </a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/select2.min.js"></script>
